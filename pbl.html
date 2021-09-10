@@ -14,6 +14,11 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <link rel="stylesheet" type="text/css" />
 
     <title>e-commerce Website</title>
@@ -48,6 +53,9 @@
         <img
           alt="team"
           class="
+            animate__animated
+            wow
+            animate__backInRight
             w-14
             h-14
             bg-gray-100
@@ -64,7 +72,16 @@
       <!--  Buttons!--->
       <nav
         aria-label
-        class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        class="
+          animate__animated
+          wow
+          animate__backInLeft
+          md:ml-auto
+          flex flex-wrap
+          items-center
+          text-base
+          justify-center
+        "
       >
         <a
           href="#Home"
@@ -185,7 +202,17 @@
       class="container px-10 py-24 mx-auto"
     >
       <div class="flex flex-wrap -m-2">
-        <div class="lg:w-1/5 md:w-1 p-5 w-full">
+        <div
+          class="
+            animate__animated
+            wow
+            animate__backInLeft
+            lg:w-1/5
+            md:w-1
+            p-5
+            w-full
+          "
+        >
           <a href="#Mens" class="block relative h-48 rounded overflow-hidden">
             <img
               alt="Mens"
@@ -203,7 +230,17 @@
             <h2 class="text-gray-900 title-font text-lg font-medium">Men's</h2>
           </a>
         </div>
-        <div class="lg:w-1/5 md:w-1/2 p-5 w-full">
+        <div
+          class="
+            animate__animated
+            wow
+            animate__backInUp
+            lg:w-1/5
+            md:w-1/2
+            p-5
+            w-full
+          "
+        >
           <a href="#Girls" class="block relative h-48 rounded overflow-hidden">
             <img
               alt="Girls"
@@ -221,7 +258,17 @@
             <h2 class="text-gray-900 title-font text-lg font-medium">Girls</h2>
           </a>
         </div>
-        <div class="lg:w-1/5 md:w-1/2 p-5 w-full">
+        <div
+          class="
+            animate__animated
+            wow
+            animate__heartBeat
+            lg:w-1/5
+            md:w-1/2
+            p-5
+            w-full
+          "
+        >
           <a
             href="#Accesssories-Men"
             class="block relative h-48 rounded overflow-hidden"
@@ -244,7 +291,17 @@
             </h2>
           </a>
         </div>
-        <div class="lg:w-1/5 md:w-1/2 p-5 w-full">
+        <div
+          class="
+            animate__animated
+            wow
+            animate__backInDown
+            lg:w-1/5
+            md:w-1/2
+            p-5
+            w-full
+          "
+        >
           <a
             href="#Accessories-Women"
             class="block relative h-48 rounded overflow-hidden"
@@ -267,7 +324,17 @@
             </h2>
           </a>
         </div>
-        <div class="lg:w-1/5 md:w-1/2 p-5 w-full">
+        <div
+          class="
+            animate__animated
+            wow
+            animate__backInRight
+            lg:w-1/5
+            md:w-1/2
+            p-5
+            w-full
+          "
+        >
           <a
             href="#Gadgets"
             class="block relative h-48 rounded overflow-hidden"
@@ -295,7 +362,15 @@
 
     <!-- Ecommerce coding  !-->
     <section class="text-gray-700 body-font">
-      <div id="Deals" class="container px-5 py-24 mx-auto">
+      <div
+        id="Deals"
+        class="
+          container
+          px-5
+          py-24
+          mx-auto
+        "
+      >
         <h1
           class="
             sm:text-3xl
@@ -9505,13 +9580,14 @@
         padding: 0;
         box-sizing: border-box;
       }
-
-      #Home {
+      html {
+        scroll-behavior: smooth;
+      }
+      header {
         background: url("https://media.istockphoto.com/photos/white-wood-wall-texture-and-backgroud-picture-id1152859422?k=6&m=1152859422&s=612x612&w=0&h=nraMn8vPdiC9gfFq0ls8UtNPL_S6dxk2DGHnqq58E3E=")
           no-repeat center;
         background-size: cover;
         font-family: Arial, Helvetica, sans-serif;
-        margin: 0em 0em 0.5em 0em;
       }
 
       .welcome {
@@ -9523,5 +9599,9 @@
         width: 100%;
       }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
